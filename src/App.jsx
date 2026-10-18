@@ -1,5 +1,7 @@
-import './App.css'
-import Project1 from './project1'
+import{BrowserRouter, Router, Routes, Route} from 'react-router-dom';
+import './App.css';
+import Project1 from './project1';
+import Orders from './components/orders';
 
 // amazon web site.....
 function App() {
@@ -7,11 +9,12 @@ function App() {
 
   return (
     <>
-      <Project1
-      />
-
-
-
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Project1 />} />
+          <Route path="/orders" element={<Orders />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

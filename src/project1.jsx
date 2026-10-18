@@ -5,146 +5,153 @@ import Orders from "./components/orders";
 import Slider from "./components/slider";
 
 function Project1() {  // sbse pehle product list .
-  const products = [
-    {
-      id: 1,
-      title: "Wireless Bluetooth Headphones",
-      image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
-      rating: "4.5",
-      reviews: "1,245",
-      price: "1,499",
-      oldPrice: "2,999",
-    },
-    {
-      id: 2,
-      title: "Smart Watch for Men & Women",
-      image:
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
-      rating: "4.3",
-      reviews: "856",
-      price: "1,999",
-      oldPrice: "3,999",
-    },
-    {
-      id: 3,
-      title: "Laptop Backpack Waterproof",
-      image:
-        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500",
-      rating: "4.6",
-      reviews: "2,105",
-      price: "799",
-      oldPrice: "1,599",
-    },
-    {
-      id: 4,
-      title: "Running Sports Shoes",
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
-      rating: "4.4",
-      reviews: "3,542",
-      price: "1,299",
-      oldPrice: "2,499",
-    },
-    {
-      id: 5,
-      title: "Modern Sunglasses",
-      image:
-        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500",
-      rating: "4.2",
-      reviews: "745",
-      price: "599",
-      oldPrice: "999",
-    },
-    {
-      id: 6,
-      title: "Women's Handbag",
-      image:
-        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500",
-      rating: "4.5",
-      reviews: "1,876",
-      price: "899",
-      oldPrice: "1,799",
-    },
-    {
-      id: 1,
-      title: "Wireless Bluetooth Headphones",
-      image:
-        "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
-      rating: "4.5",
-      reviews: "1,245",
-      price: "1,499",
-      oldPrice: "2,999",
-    },
-    {
-      id: 2,
-      title: "Smart Watch for Men & Women",
-      image:
-        "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
-      rating: "4.3",
-      reviews: "856",
-      price: "1,999",
-      oldPrice: "3,999",
-    },
-    {
-      id: 3,
-      title: "Laptop Backpack Waterproof",
-      image:
-        "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500",
-      rating: "4.6",
-      reviews: "2,105",
-      price: "799",
-      oldPrice: "1,599",
-    },
-    {
-      id: 4,
-      title: "Running Sports Shoes",
-      image:
-        "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
-      rating: "4.4",
-      reviews: "3,542",
-      price: "1,299",
-      oldPrice: "2,499",
-    },
-    {
-      id: 5,
-      title: "Modern Sunglasses",
-      image:
-        "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500",
-      rating: "4.2",
-      reviews: "745",
-      price: "599",
-      oldPrice: "999",
-    },
-    {
-      id: 6,
-      title: "Women's Handbag",
-      image:
-        "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500",
-      rating: "4.5",
-      reviews: "1,876",
-      price: "899",
-      oldPrice: "1,799",
-    }
-  ];
+  // const products = [
+  //   {
+  //     id: 1,
+  //     title: "Wireless Bluetooth Headphones",
+  //     image:
+  //       "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
+  //     rating: "4.5",
+  //     reviews: "1,245",
+  //     price: "1,499",
+  //     oldPrice: "2,999",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Smart Watch for Men & Women",
+  //     image:
+  //       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
+  //     rating: "4.3",
+  //     reviews: "856",
+  //     price: "1,999",
+  //     oldPrice: "3,999",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Laptop Backpack Waterproof",
+  //     image:
+  //       "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500",
+  //     rating: "4.6",
+  //     reviews: "2,105",
+  //     price: "799",
+  //     oldPrice: "1,599",
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Running Sports Shoes",
+  //     image:
+  //       "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
+  //     rating: "4.4",
+  //     reviews: "3,542",
+  //     price: "1,299",
+  //     oldPrice: "2,499",
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Modern Sunglasses",
+  //     image:
+  //       "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500",
+  //     rating: "4.2",
+  //     reviews: "745",
+  //     price: "599",
+  //     oldPrice: "999",
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "Women's Handbag",
+  //     image:
+  //       "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500",
+  //     rating: "4.5",
+  //     reviews: "1,876",
+  //     price: "899",
+  //     oldPrice: "1,799",
+  //   },
+  //   {
+  //     id: 1,
+  //     title: "Wireless Bluetooth Headphones",
+  //     image:
+  //       "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500",
+  //     rating: "4.5",
+  //     reviews: "1,245",
+  //     price: "1,499",
+  //     oldPrice: "2,999",
+  //   },
+  //   {
+  //     id: 2,
+  //     title: "Smart Watch for Men & Women",
+  //     image:
+  //       "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500",
+  //     rating: "4.3",
+  //     reviews: "856",
+  //     price: "1,999",
+  //     oldPrice: "3,999",
+  //   },
+  //   {
+  //     id: 3,
+  //     title: "Laptop Backpack Waterproof",
+  //     image:
+  //       "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500",
+  //     rating: "4.6",
+  //     reviews: "2,105",
+  //     price: "799",
+  //     oldPrice: "1,599",
+  //   },
+  //   {
+  //     id: 4,
+  //     title: "Running Sports Shoes",
+  //     image:
+  //       "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500",
+  //     rating: "4.4",
+  //     reviews: "3,542",
+  //     price: "1,299",
+  //     oldPrice: "2,499",
+  //   },
+  //   {
+  //     id: 5,
+  //     title: "Modern Sunglasses",
+  //     image:
+  //       "https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500",
+  //     rating: "4.2",
+  //     reviews: "745",
+  //     price: "599",
+  //     oldPrice: "999",
+  //   },
+  //   {
+  //     id: 6,
+  //     title: "Women's Handbag",
+  //     image:
+  //       "https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=500",
+  //     rating: "4.5",
+  //     reviews: "1,876",
+  //     price: "899",
+  //     oldPrice: "1,799",
+  //   }
+  // ];
 
-  //popup--
-  useEffect(()=>{
-    alert(
-    ("I build an Amazon clone using React.js, javaScript, css, Node.js. \n"+
-      "I used REST APIs and Fetch APIs for frontend- backend communication and immplemented product listing , search, cart, slider and resposive design.")
-    )
-  })
+  // react in backend products import..
+  const [product, setProduct] = useState([]);
 
-  // seearch functionality
+  useEffect(() => {
+    fetch("http://localhost:5000/api/products")
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+        setProduct(data);
+      })
+      .catch((error) => {
+        console.log("Error:", error)
+      })
+  }, [])
+
+
+  // seearch functionality----
   const [searchTerm, setSearchTerm] = useState("");
   // search icon click functionality
   const [searched, setSearched] = useState("");
 
-  const filteredProducts = products.filter((prod) =>
+  const filteredProducts = product.filter((prod) =>
     prod.title.toLowerCase().includes(searched.toLowerCase())
   );
-
 
 
   // cart-----
@@ -153,29 +160,143 @@ function Project1() {  // sbse pehle product list .
     setCart([...cart, product]);
   };
 
-  // remove from cart
+  // remove from cart--
   const removeFromCart = (index) => {
     setCart((prevCart) => prevCart.filter((_, i) => i !== index));
   }
 
-  // backend products
-  const [productive, setProductive] = useState([]);
-  useEffect(()=>{
-    fetch("http:/localhost:5000/api/products")
-    .then((res)=>res.json())
-    .then((data)=>{
-      setProductive(data)
+  // Add product form----
+  const [productName, setProductName] = useState("");
+  const [productPrice, setProductPrice] = useState("");
+
+  const addProduct = () => {
+    fetch("http://localhost:5000/api/products", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        title: productName,
+        price: Number(productPrice)
+      })
     })
-    .catch((error)=>{
-      console.log("Error",error)
-    })
-  },[])
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
 
-  //orders functionality
-  const [orders, setOrders] = useState([]);
-  const [showOrders, setShowOrders] = useState(false);
+        alert("Product added successfully")
+
+        const newProduct = {
+          _id: data.product._id,
+          id: data.product._id,
+          title: data.product.title,
+          image: "",
+          rating: "4.5",
+          reviews: "0",
+          price: data.product.price,
+          oldPrice: data.product.price
+
+        };
+        setProduct((prevProducts) => [
+          ...prevProducts, newProduct
+        ]);
+
+      })
+      .catch((error) => {
+        console.log("Error:", error);
+      })
+  }
 
 
+  // react in DELETE function---
+
+  const deleteProduct = async (id) => {
+    try {
+      const res = await fetch(`http://localhost:5000/api/products/${id}`, { method: "DELETE" });
+      const data = await res.json();
+      console.log(data);
+
+      setProduct((prevProducts) => prevProducts.filter((product) => (product._id || product.id) !== id));
+      alert("Product deleted successfully");
+    } catch (error) {
+      console.log("Error:", error)
+    }
+  };
+
+  // react in EDIT function---
+  const editProduct = (product) => {
+    const newTitle = prompt("Enter new product title:", product.title);
+    const newPrice = prompt("Enter new product price:", product.price);
+
+    if (newTitle === null || newPrice === null) {
+      return; // User canceled the prompt
+    }
+
+    updateProduct(product._id || product.id, {
+      title: newTitle,
+      price: Number(newPrice)
+    });
+  };
+
+  // update product function---
+  const updateProduct = async (id, updatedData) => {
+    try {
+      const res = await fetch(`http://localhost:5000/api/products/${id}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(updatedData)
+      });
+
+      const data = await res.json();
+      console.log(data);
+
+      setProduct((prevProducts) => prevProducts.map((product) => (product._id || product.id) === id ? { ...product, ...updatedData } : product));
+      alert("Product updated successfully");
+    } catch (error) {
+      console.log("Error:", error);
+    }
+  };
+
+  // react in add to order functionality---
+
+  const placeOrder = async () => {
+    try {
+      const orderItems = cart.map((item) => ({
+        ...item,
+        price:Number(String(item.price).replace(/./g,""))
+      }));
+      const totalAmount = orderItems.reduce((total, item) => total + item.price, 0);
+    
+      const orderData = {
+        items: orderItems,
+        totalAmount: totalAmount
+      };
+
+      const res = await fetch("http://localhost:5000/api/orders", {
+        method: "POST",
+        headers: { 
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(orderData)
+      });
+      const data = await res.json();
+      console.log(data);
+      if (!res.ok) {
+        alert(data.message || "Failed to place order");
+        return;
+      }
+      alert("Order placed successfully");
+
+    } catch (error) {
+      console.log("Error:", error);
+      alert("Failed to place order");
+    }
+  };
+
+
+// ------------------------------------------
 
   return (
     <div className="amazon">
@@ -258,12 +379,12 @@ function Project1() {  // sbse pehle product list .
         </div>
 
         {/* Orders */}
-        <div className="orders" onClick={() => setShowOrders(!showOrders)}>
-          <strong>Returns<br />& Orders</strong>
+        <div className="orders" onClick={() => (window.location.href = "/orders")}>
+          <strong onClick={placeOrder}>Returns<br />& Orders</strong>
         </div>
 
 
-        {/* Cart */}
+        {/* Cart  */}
         <div className="cart">
           <i className="fa-solid fa-cart-shopping"></i>
           <b>{cart.length}</b>
@@ -287,9 +408,8 @@ function Project1() {  // sbse pehle product list .
             ))
           )}
         </section>
+        
       </header>
-      {showOrders && <Orders orders={orders} setOrders={setOrders} />}
-
 
 
       {/* ==== MENU ==== */}
@@ -312,6 +432,30 @@ function Project1() {  // sbse pehle product list .
         <div>Prime</div>
 
       </nav>
+
+
+
+
+      {/* product form */}
+      <div className="add-product-form">
+        <input type="text"
+          placeholder="Product name"
+          value={productName}
+          onChange={(e) =>
+            setProductName(e.target.value)}
+        />
+
+        <input type="number"
+          placeholder="Product price"
+          value={productPrice}
+          onChange={(e) =>
+            setProductPrice(e.target.value)}
+        />
+        <button onClick={addProduct}>Add Product</button>
+      </div>
+
+
+
 
 
       {/* ==== HERO ==== */}
@@ -391,14 +535,14 @@ function Project1() {  // sbse pehle product list .
 
           <div className="products">
 
-            {productive.map((product) => (
+            {filteredProducts.map((product) => (
 
-              <div className="productCard" key={product.id}>
+              <div className="productCard" key={product._id || product.id}>
 
                 <div className="productImage">
 
                   <img
-                    src={product.image}
+                    src={product.image || "https://via.placeholder.com/150"}
                     alt={product.title}
                   />
 
@@ -441,6 +585,11 @@ function Project1() {  // sbse pehle product list .
                 <button type="button" className="addCart" onClick={() => addToCart(product)}>
                   Add to Cart
                 </button>
+
+                <button className="delete" onClick={() =>
+                  deleteProduct(product._id || product.id)}>Delete</button>
+
+                <button className="edit" onClick={() => editProduct(product)}>Edit</button>
 
               </div>
 

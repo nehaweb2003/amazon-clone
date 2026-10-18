@@ -20,7 +20,6 @@ body {
   color: #111;
   width: 100%;
 
-
 }
 
 
@@ -438,7 +437,11 @@ body {
 
   overflow: hidden;
 }
-
+/* add products form */
+.add-product-form{
+  display: block;
+  /* none */
+}
 
 /* =====================================================
    HERO CONTENT
@@ -844,6 +847,48 @@ body {
 }
 
 
+/* delete button */
+.delete {
+  width: 60%;
+
+  border: none;
+
+  background: #f44336;
+
+  padding: 9px;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  margin-top: 8px;
+}
+
+.delete:hover {
+  background: #d32f2f;
+}
+
+/* edit button */
+.edit {
+  width: 50%;
+
+  border: none;
+
+  background: #4caf50;
+
+  padding: 9px;
+
+  border-radius: 20px;
+
+  cursor: pointer;
+
+  margin-top: 8px;
+}
+
+.edit:hover {
+  background: #388e3c;
+}
+
 /* =====================================================
    DEAL
 ===================================================== */
@@ -966,11 +1011,24 @@ footer {
 
 @media (max-width: 1200px) {
 
-  .navbar {
-    gap: 8px;
-    padding: 8px 10px;
-  }
+   html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   }
 
+   #root{
+    width: 85%;
+   }
+  body{
+    width: 120%;
+  }
+  .navbar {
+    gap: 5px;
+    padding: 5px 5px;
+  }
+ 
   .location {
     min-width: 120px;
   }
@@ -983,6 +1041,8 @@ footer {
     min-width: 85px;
   }
 
+  
+
   .products {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
@@ -990,6 +1050,12 @@ footer {
   .categories {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+  .cartItems {
+    position: relative;
+    left: -210px;
+    top: 85px;
+  }
+
 }
 
 
@@ -999,11 +1065,24 @@ footer {
 
 @media (max-width: 900px) {
 
+  
+
   .navbar {
     flex-wrap: wrap;
 
     height: auto;
   }
+
+   html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+   }
+
+   #root{
+    width: 100%;
+   }
 
   .searchBox {
     order: 10;
@@ -1024,6 +1103,11 @@ footer {
   .slider img {
     width: 75%;
   }
+  .cartItems {
+    position: relative;
+    left: 50px;
+    top: 128px;
+  }
 }
 
 
@@ -1033,11 +1117,27 @@ footer {
 
 @media (max-width: 650px) {
 
+  html,body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  #root{
+    width: 75%;
+   
+  }
   .navbar {
-    padding: 8px;
-    gap: 6px;
+   width: 100%;
+  }
+  .menu div{
+    font-size: 13px;
+    padding-right: 20px;
   }
 
+  body{
+    width: 135%;
+  }
   .logo {
     min-width: 105px;
   }
@@ -1151,6 +1251,15 @@ footer {
     font-size: 14px;
   }
 
+  .cartItems {
+    position: relative;
+    left: 300px;
+    top: 129px;
+    font-size: 7px;
+    width: 130px;
+   
+  }
+
   .price strong {
     font-size: 19px;
   }
@@ -1181,6 +1290,13 @@ footer {
 
 @media (max-width: 400px) {
 
+  body{
+    width: 100%;
+  }
+ #root{
+    width: 100%;
+  }
+ 
   .logo {
     min-width: 95px;
   }
@@ -1189,18 +1305,59 @@ footer {
     font-size: 20px;
   }
 
+  .navbar {
+   width: 381px;
+  }
+  .menu{
+    width: 381px;
+  }
   .cart {
-    min-width: 55px;
+    min-width: 40px;
+  }
+  .cartItems {
+    position: relative;
+    left: 40px;
+    top: 150px;
+    width: 130px;
+    font-size: 7px;
+  }
+ 
+  .categories {
+    padding: 10px 5px;
+    width: 372px;
+  }
+  .productsSection {
+    width: 362px;
   }
 
   .products {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr ;
+    width: 90%;
   }
 
   .productImage {
     height: 180px;
   }
 
+  .deal{
+    width: 362px;
+  }
+ 
+ 
+  .slider img{
+    left: 50px;
+  }
+  .centreContent{
+    display: none;
+  } 
+ 
+  .add-product-form{
+    width: 362px;
+  }
+ 
+  footer{
+    width: 372px;
+  }
   .footerContent {
     grid-template-columns: 1fr;
 
